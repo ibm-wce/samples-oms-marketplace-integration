@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mashups>
+    <mashup id="orderList_getOrderList">
+        <API Name="getOrderList">
+            <Input>
+                <Order EntryType="">
+                    <OrderHoldType/>
+                    <OrderLine>
+                        <OrderHoldType/>
+                    </OrderLine>
+                </Order>
+            </Input>
+            <Template>
+                <OrderList>
+                    <Order EntryType=""/>
+                </OrderList>
+            </Template>
+        </API>
+    </mashup>
+</mashups>

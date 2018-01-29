@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScreenBundle
+    screenBundleId="extn.order.search.OrderListScreenExtnBundle" screenId="extn.order.search.OrderListScreenExtn">
+    <BundleEntries>
+        <BundleEntry bundleEntryId="extn_tblColEntryType_View_name"
+            bundleKey="Channel" bundleValueFn="_scSimpleBundle"
+            property="name" type="WIDGET" uId="extn_tblColEntryType"/>
+    </BundleEntries>
+</ScreenBundle>

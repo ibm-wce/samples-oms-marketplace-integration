@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScreenBundle screenBundleId="extn.order.search.OrderSearchExtnBundle" screenId="extn.order.search.OrderSearchExtn">
+    <BundleEntries>
+        <BundleEntry
+            bundleEntryId="extn_FSChannel_FilteringSelect_label"
+            bundleKey="Channel" bundleValueFn="_scBundle"
+            property="label" type="WIDGET" uId="extn_FSChannel"/>
+    </BundleEntries>
+</ScreenBundle>

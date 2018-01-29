@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Extensions>
+    <Identifier id="">
+        <UIExtns>
+            <UIExtn appScreen="isccs.order.search.OrderSearch"
+                extnScreen="extn.order.search.OrderSearchExtn" type="diffrential"/>
+            <UIExtn appScreen="isccs.order.search.OrderListScreen"
+                extnScreen="extn.order.search.OrderListScreenExtn" type="diffrential"/>
+        </UIExtns>
+    </Identifier>
+</Extensions>

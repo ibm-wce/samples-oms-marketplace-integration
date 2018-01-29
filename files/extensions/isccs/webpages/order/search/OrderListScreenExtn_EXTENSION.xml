@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionMetaData>
+    <ScreenExtension extnClassName="OrderListScreenExtn"
+        extnPackage="extn.order.search"
+        originalScreen="isccs.order.search.OrderListScreen"
+        originalScreenPackage="isccs.order.search" type="diffrential">
+        <Items>
+            <GridX _sc_extensibility_operation="change" _sc_extensibility_referenceUId="listGrid">
+                <Structure>
+                    <Layout>
+                        <View _sc_extensibility_moveOrder="1"
+                            _sc_extensibility_operation="insert"
+                            _sc_extensibility_position="after"
+                            _sc_extensibility_referenceUId="tblColOrderDate"
+                            field="extn_EntryType"
+                            name="$(_scSimpleBundle:Channel)"
+                            uId="extn_tblColEntryType" width="10%">
+                            <BindingData>
+                                <SourceBinding path="DisplayEntryType"/>
+                            </BindingData>
+                        </View>
+                    </Layout>
+                </Structure>
+            </GridX>
+        </Items>
+        <MashupRefs>
+            <Behavior>
+                <MashupRef mashupId="orderList_getOrderList" mashupRefId="getOrderList"/>
+            </Behavior>
+        </MashupRefs>
+    </ScreenExtension>
+</ExtensionMetaData>

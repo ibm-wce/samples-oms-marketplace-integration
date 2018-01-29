@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionMetaData>
+    <ScreenExtension extnClassName="OrderSearchExtn"
+        extnPackage="extn.order.search"
+        originalScreen="isccs.order.search.OrderSearch"
+        originalScreenPackage="isccs.order.search" type="diffrential">
+        <Items>
+            <FilteringSelect _sc_extensibility_moveOrder="1"
+                _sc_extensibility_operation="insert"
+                _sc_extensibility_position="before"
+                _sc_extensibility_referenceUId="radDraftOrderFlag"
+                label="$(_scBundle:Channel)" uId="extn_FSChannel">
+                <BindingData>
+                    <SourceBinding namespace="screenInput" path="Order.EntryType"/>
+                    <TargetBindings>
+                        <TargetBinding
+                            namespace="getAdvancedOrderList_input"
+                            path="Order.EntryType" scExtensibilityArrayItemId="extn_TargetBindings_0"/>
+                    </TargetBindings>
+                    <OptionsBinding
+                        descriptionField="CodeShortDescription"
+                        namespace="extn_getEntryTypeList"
+                        path="CommonCodeList.CommonCode" valueField="CodeValue"/>
+                </BindingData>
+            </FilteringSelect>
+        </Items>
+        <Namespaces>
+            <SourceNamespaces>
+                <Source isExtn="true"
+                    scExtensibilityArrayItemId="extn_SourceNamespaces_7" value="extn_getEntryTypeList"/>
+            </SourceNamespaces>
+        </Namespaces>
+        <MashupRefs>
+            <Init>
+                <MashupRef extnType="ADD"
+                    mashupId="mashup_getCommonCodeList"
+                    mashupRefId="extn_getEntryTypeList" sourceNamespace="extn_getEntryTypeList"/>
+            </Init>
+        </MashupRefs>
+    </ScreenExtension>
+</ExtensionMetaData>
